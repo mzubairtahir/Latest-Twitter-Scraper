@@ -4,8 +4,8 @@ from bs4  import BeautifulSoup
 import pandas as pd
 
 
-userNameOfAccount="elonmusk"
-Total_scrolls=100 
+userNameOfAccount="elonmusk"   # enter username of account here
+Total_scrolls=100   # total number of scrolls you want to do
 
 link="https://twitter.com/"+userNameOfAccount
 
