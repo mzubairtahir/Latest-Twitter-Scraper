@@ -62,5 +62,5 @@ for i in all_posts:
     )
 
 df=pd.DataFrame(data)
-df.drop_duplicates(inplace=True)  # to remove duplicates, our final dataframe will contain dublicates!
+df.drop_duplicates(inplace=True)  # to remove duplicates, because our dataframe contain dublicates!
 df.to_excel('output.xlsx',index=False)
