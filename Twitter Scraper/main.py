@@ -3,9 +3,21 @@ from playwright.sync_api import sync_playwright
 from bs4  import BeautifulSoup
 import pandas as pd
 
-data=[]
-link="https://twitter.com/elonmusk"
-cont=""
+
+userNameOfAccount="elonmusk"
+Total_scrolls=100 
+
+link="https://twitter.com/"+userNameOfAccount
+
+cont=""  # initializing variable for html content 
+
+
+'''
+To understand this code, kindly first README.MD!
+'''
+
+data=[]   # in which our records will be appended
+
 with sync_playwright() as p:
     browser= p.chromium.launch(headless=True)
     page=browser.new_page()
@@ -13,7 +25,7 @@ with sync_playwright() as p:
     
     inital_height=0
     final_height=1000
-    for i in range(100):  # 4== 51 
+    for i in range(Total_scrolls):  
         page.mouse.wheel(inital_height,final_height)
         inital_height=final_height
         final_height=final_height+300
@@ -50,5 +62,5 @@ for i in all_posts:
     )
 
 df=pd.DataFrame(data)
-df.drop_duplicates(inplace=True)  
-df.to_excel('elonfinal.xlsx',index=False)
+df.drop_duplicates(inplace=True)  # to remove duplicates, our final dataframe will contain dublicates!
+df.to_excel('output.xlsx',index=False)
