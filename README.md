@@ -1,4 +1,4 @@
-<h1>Twitter Tweets Scraper 🐦</h1>
+<h1>Latest Twitter Scraper 🐦</h1>
 <h2>Overview</h2>
 <p>This repository contains a Python script that scrapes tweets from a Twitter account. The script scrapes the latest dynamic web structure of Twitter. Twitter usually only shows the code for the tweets that are currently visible on the screen, which is usually around 9 tweets. However, we have implemented a simple logic in the script to scrape all the tweets, regardless of whether they are currently visible on the screen or not.</p>
 <h2>Features</h2>
