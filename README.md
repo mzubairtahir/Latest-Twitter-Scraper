@@ -14,6 +14,5 @@
 <h2>Contributing</h2>
 <p>Contributions are always welcome! If you find a bug or have an idea for an improvement, please open an issue or submit a pull request 🙏.</p>
 <img src="https://www.suit.gr/wp-content/uploads/2016/03/link-icon-twitter.png" alt="Twitter logo" height="100">
-<p align="center">This project is not affiliated with Twitter.</p>
 
 
